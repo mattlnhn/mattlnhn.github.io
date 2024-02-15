@@ -1,9 +1,7 @@
 :root {
-	--fg-color: #ebf1ff;
+	--fg-color: #d6e2ff;
 	--bg-color: #000614;
-	--accent-light: #d6e2ff;
-	--accent-bold: #0045f5;
-	--accent-dark: #00113d;
+	--accent: #0045f5;
 	--pad: 2.5em;
 }
 
