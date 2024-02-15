@@ -36,27 +36,24 @@ html {
 	color: var(--fg-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, summary {
 	font-family: SpaceGrotesk, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	animation: fadeIn ease 1s;
 }
 
-p, img {
+p, ul, ol, details, img {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5em;
 	animation: fadeIn ease 2s;
 	padding-bottom: 1.25em;
 }
 
 nav {
-	padding-bottom: 2.5em;
+	padding-bottom: 1.5em;
 }
 
 .site-header a {
 	text-decoration: none;
-}
-
-.nav-links {
-	line-height: 0.3;
 }
 
 .rounded {
