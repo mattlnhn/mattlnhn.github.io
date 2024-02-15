@@ -69,5 +69,6 @@ nav {
 hr {
 	height: 0;
 	border: 0;
-	border-top: 1px solid var(--fg-color)
+	border-top: 1px solid var(--fg-color);
+	animation: fadeIn ease 2s;
 }
