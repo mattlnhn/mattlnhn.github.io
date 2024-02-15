@@ -2,7 +2,23 @@
 	--fg-color: #d6e2ff;
 	--bg-color: #000614;
 	--accent: #0045f5;
-	--pad: 2.5em;
+}
+
+html {
+	padding: 1em 1em;
+}
+
+@media (min-width:540px) {
+	html {
+		padding: 1em 2em;
+	}
+}
+
+@media (min-width:960px) {
+	html {
+		margin: 0 auto;
+		max-width: 960px;
+	}
 }
 
 @font-face{
@@ -26,10 +42,6 @@
 	color: var(--fg-color);
 }
 
-body {
-	padding: var(--pad);
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: SpaceGrotesk, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	animation: fadeIn ease 1s;
@@ -38,10 +50,11 @@ h1, h2, h3, h4, h5, h6 {
 p, img {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	animation: fadeIn ease 2s;
+	padding-bottom: 1.25em;
 }
 
 nav {
-	padding-bottom: var(--pad);
+	padding-bottom: 2.5em;
 }
 
 .site-header a {
