@@ -1,0 +1,45 @@
+:root {
+	--fg-color: #ebf1ff;
+	--bg-color: #000614;
+	--accent-light: #d6e2ff;
+	--accent-bold: #0045f5;
+	--accent-dark: #00113d;
+	--pad: 2.5em;
+}
+
+@font-face{
+	font-family: SpaceGrotesk;
+	font-weight: 500;
+	src: url("/SpaceGrotesk.woff2") format("woff2");
+}
+
+* {
+	box-sizing: border-box;
+	background: var(--bg-color);
+	color: var(--fg-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: SpaceGrotesk, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: var(--pad);
+}
+
+nav {
+	padding-bottom: var(--pad);
+}
+
+.site-header a {
+	text-decoration: none;
+}
+
+.nav-links {
+	line-height: 0.3;
+}
+
+.rounded {
+	border-radius: 50%;
+}
