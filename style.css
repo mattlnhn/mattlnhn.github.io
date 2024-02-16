@@ -1,9 +1,11 @@
+/*Colours*/
 :root {
 	--fg-color: #d6e2ff;
 	--bg-color: #000614;
 	--accent: #0045f5;
 }
 
+/*Responsive layout*/
 html {
 	margin: 1em 1em;
 }
@@ -15,12 +17,20 @@ html {
 	}
 }
 
-@font-face{
+/*Fonts*/
+@font-face {
 	font-family: SpaceGrotesk;
 	font-weight: 500;
 	src: url("/SpaceGrotesk.woff2") format("woff2");
 }
 
+@font-face {
+	font-family: Inter;
+	font-weight: 400;
+	src: url("/Inter.woff2") format("woff2");
+}
+
+/*Animations*/
 @keyframes fade {
 	0% {
 		opacity: 0;
@@ -66,12 +76,14 @@ html {
 	}
 }
 
+/*Apply to all*/
 * {
 	box-sizing: border-box;
 	background: var(--bg-color);
 	color: var(--fg-color);
 }
 
+/*Body*/
 body {
 	animation: fade ease 2s;
 	-moz-animation: fade ease 2s;
@@ -80,18 +92,19 @@ body {
 	-ms-animation: fade ease 2s;
 }
 
+/*Headers*/
 h1, h2, h3, h4, h5, h6, summary {
-	font-family: SpaceGrotesk, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: SpaceGrotesk, Inter, Helvetica, Arial, sans-serif;
 	line-height: 1.5em;
 }
 
-p, ul, ol, details, img {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding-top: 1.5em;
+/*Body text*/
+p, ul, ol, details {
+	font-family: Inter, Helvetica, Arial, sans-serif;
 	line-height: 1.5em;
-	
 }
 
+/*Lists*/
 ul, ol {
 	padding: 0 1.5em;
 }
@@ -100,13 +113,9 @@ nav {
 	padding-bottom: 0em;
 }
 
+/*Remove underline/link styling from site header*/
 .site-header a {
 	text-decoration: none;
-}
-
-.post-date {
-	font-style: italic;
-	padding-bottom: 0;
 }
 
 hr {
