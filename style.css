@@ -30,6 +30,11 @@ html {
 	src: url("/Inter.woff2") format("woff2");
 }
 
+@font-face {
+	font-family: Outfit;
+	src: url(/Outfit-Regular.woff2);
+}
+
 /*Animations*/
 @keyframes fade {
 	0% {
@@ -76,11 +81,35 @@ html {
 	}
 }
 
+@keyframes line {
+	from {
+		stroke-dashoffset: 2000;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
 /*Apply to all*/
 * {
 	box-sizing: border-box;
 	background: var(--bg-color);
 	color: var(--fg-color);
+}
+
+.logo {
+	fill: none;
+	stroke: var(--fg-color);
+	stroke-linecap: square;
+	stroke-linejoin: round;
+	stroke-width: 40px;
+	padding: 1em 0;
+}
+
+.animated {
+	stroke-dasharray: 1600;
+	stroke-dashoffset: 0;
+	animation: line 1s ease;
 }
 
 /*Body*/
@@ -94,13 +123,13 @@ body {
 
 /*Headers*/
 h1, h2, h3, h4, h5, h6, summary {
-	font-family: SpaceGrotesk, Inter, Helvetica, Arial, sans-serif;
+	font-family: SpaceGrotesk, Helvetica, Arial, sans-serif;
 	line-height: 1.5em;
 }
 
 /*Body text*/
 p, ul, ol, details {
-	font-family: Inter, Helvetica, Arial, sans-serif;
+	font-family: Outfit, Helvetica, Arial, sans-serif;
 	line-height: 1.5em;
 }
 
