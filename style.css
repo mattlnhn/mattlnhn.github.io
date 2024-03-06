@@ -114,23 +114,13 @@ html {
 
 /*Body*/
 body {
+	font-family: Outfit, Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
 	animation: fade ease 2s;
 	-moz-animation: fade ease 2s;
 	-webkit-animation: fade ease 2s;
 	-o-animation: fade ease 2s;
 	-ms-animation: fade ease 2s;
-}
-
-/*Headers*/
-h1, h2, h3, h4, h5, h6, summary {
-	font-family: Outfit, Helvetica, Arial, sans-serif;
-	line-height: 1.5em;
-}
-
-/*Body text*/
-p, ul, ol, details {
-	font-family: Outfit, Helvetica, Arial, sans-serif;
-	line-height: 1.5em;
 }
 
 /*Lists*/
