@@ -110,6 +110,11 @@ html {
 	stroke-dasharray: 1600;
 	stroke-dashoffset: 0;
 	animation: line 1s ease;
+	-moz-animation: line 1s ease;
+	-webkit-animation: line 1s ease;
+	-o-animation: line 1s ease;
+	-ms-animation: line 1s ease;
+
 }
 
 /*Body*/
