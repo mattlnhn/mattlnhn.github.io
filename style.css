@@ -132,11 +132,6 @@ nav {
 	padding-bottom: 0em;
 }
 
-/*Images*/
-img {
-	width: 100%; /*default width 100%*/
-}
-
 /*Remove underline/link styling from site header*/
 .site-header a {
 	text-decoration: none;
